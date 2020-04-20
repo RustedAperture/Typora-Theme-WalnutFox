@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Muli&family=Fira+Code&family=Fira+Sans:ital,wght@1,400');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Fira+Sans:ital@1&family=Muli&display=swap');
 
 :root {
     --theme-grey: #939293;
@@ -33,13 +33,12 @@
     --rawblock-edit-panel-bd: var(--theme-sb);
 
     --font: 'Muli', sans-serif !important;
-    --font-monospace: 'Fira Code', monospace !important;
+    --monospace: 'Fira Code', monospace !important;
 }
 
 /* monokai code color */
 .cm-s-inner {
-    letter-spacing: 0.3px;
-    word-spacing: 1px;
+    font-weight: 300;
     color: var(--theme-fg);
     border: 2px solid var(--theme-cm) !important;
     border-radius: 0.25rem;
@@ -479,7 +478,7 @@ table tr td:last-child {
     margin: 0.8rem 0 !important;
     line-height: 1.43rem;
     color: hsl(0, 0%, 78%);
-    font-family: var(--font-monospace);
+    font-family: var(--monospace);
     font-weight: bold;
     font-size: 0.85rem;
     word-wrap: normal;
@@ -493,7 +492,7 @@ table tr td:last-child {
 tt {
     padding: 2px 4px;
     border-radius: 2px;
-    font-family: var(--font-monospace);
+    font-family: var(--monospace);
     font-weight: bold;
     font-size: 0.85rem;
     color: var(--theme-or) !important;
@@ -591,7 +590,7 @@ tt {
 
 .md-image > .md-meta {
     border-radius: 3px;
-    font-family: var(--font-monospace);
+    font-family: var(--monospace);
     padding: 2px 0px 0px 4px;
     font-size: 0.9em;
     color: inherit;
