@@ -260,7 +260,7 @@ h1 {
     font-size: 2.25em;
 }
 
-h1:after {
+#write h1:after {
     content: '';
     display: block;
     margin: 0.2em auto 0;
