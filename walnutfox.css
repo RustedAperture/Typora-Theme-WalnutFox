@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Muli&family=Fira+Code');
+@import url('https://fonts.googleapis.com/css2?family=Muli&family=Fira+Code&family=Fira+Sans:ital,wght@1,400');
 
 :root {
     --theme-grey: #939293;
@@ -180,7 +180,7 @@ body {
     color: var(--theme-fg);
     background-color: var(--bg-color);
     -webkit-font-smoothing: antialiased;
-    line-height: 1.6rem;
+    line-height: 1.5rem;
     letter-spacing: 0;
     margin: 0;
     overflow-x: hidden;
@@ -258,10 +258,11 @@ input:hover {
 #write h6 {
     margin-top: 1rem;
     margin-bottom: 1rem;
-    font-family: inherit;
-    font-weight: 500;
-    line-height: 1.5;
+    font-family: 'Fira Sans';
+    font-weight: 400;
+    font-style: italic;
     color: inherit;
+    line-height: 1.2;
 }
 
 #write h2::after,
@@ -274,13 +275,13 @@ input:hover {
     top: 0;
     color: var(--theme-cm);
     font-size: 1rem;
-    font-weight: bold;
     font-variant: 'small-caps';
 }
 
 h1 {
     padding-bottom: 0.3em;
-    font-size: 2.25em;
+    font-size: 2.986em;
+    line-height: 1.2;
 }
 
 #write h1:after {
@@ -293,23 +294,26 @@ h1 {
 
 h2 {
     padding-bottom: 0.3em;
-    font-size: 1.75em;
-    line-height: 1.225;
+    font-size: 2.488em;
     border-bottom: 1px solid var(--theme-cm);
+    line-height: 1.1;
 }
 
 h3 {
-    font-size: 1.5em;
-    line-height: 1.43;
+    font-size: 2.074em;
+    line-height: 1;
 }
 
 h4 {
-    font-size: 1.25em;
+    font-size: 1.728em;
 }
 
-h5,
+h5 {
+    font-size: 1.44em;
+}
+
 h6 {
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
 p,
@@ -440,26 +444,28 @@ table tr td:last-child {
 }
 
 #write h2::after {
-    content: '##';
-    top: 0.6rem;
+    content: 'H2';
+    top: 0.8rem;
 }
 
 #write h3::after {
-    content: '###';
-    top: 0.4rem;
+    content: 'H3';
+    top: 0.7rem;
 }
 
 #write h4::after {
-    content: '####';
-    top: 0.3rem;
+    content: 'H4';
+    top: 0.6rem;
 }
 
 #write h5::after {
-    content: '#####';
+    content: 'H5';
+    top: 0.3rem;
 }
 
 #write h6::after {
-    content: '######';
+    content: 'H6';
+    top: 0.2rem;
 }
 
 #write h3::before,
