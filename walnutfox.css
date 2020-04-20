@@ -258,15 +258,12 @@ input:hover {
 h1 {
     padding-bottom: 0.3em;
     font-size: 2.25em;
-    line-height: 1.2;
-    text-align: center;
 }
 
 h1:after {
     content: '';
     display: block;
     margin: 0.2em auto 0;
-    width: 100px;
     height: 2px;
     border-bottom: 2px dashed var(--primary-color);
 }
@@ -370,7 +367,7 @@ ol:last-child {
 
 blockquote {
     border-left: 4px solid var(--primary-color);
-    padding: 10px 0px 10px 15px;
+    padding: 10px 15px 10px 15px;
     color: var(--theme-fg);
     background-color: var(--theme-sb);
 }
@@ -440,6 +437,13 @@ table tr td:last-child {
 
 #write h6::after {
     content: '######';
+}
+
+#write h3::before,
+#write h4::before,
+#write h5::before,
+#write h6::before {
+    display: none;
 }
 
 #write .md-fences {
@@ -520,7 +524,7 @@ tt {
     padding: 1rem;
     font-size: 85%;
     line-height: 1.45;
-    background-color: var(--theme-bg);
+    background-color: var(--theme-sb);
     border: 0;
     border-radius: 3px;
     color: var(--theme-cm);
