@@ -418,17 +418,17 @@ table tr td:last-child {
 
 #write h2::after {
     content: '##';
-    top: 0.43rem;
+    top: 0.6rem;
 }
 
 #write h3::after {
     content: '###';
-    top: 0.2rem;
+    top: 0.4rem;
 }
 
 #write h4::after {
     content: '####';
-    top: 0.07rem;
+    top: 0.3rem;
 }
 
 #write h5::after {
