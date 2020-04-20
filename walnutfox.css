@@ -30,6 +30,7 @@
     --active-file-bg-color: var(--theme-sb);
     --item-hover-bg-color: var(--select-text-bg-color);
     --text-color: var(--theme-fg);
+    --rawblock-edit-panel-bd: var(--theme-sb);
 
     --font: 'Muli', sans-serif !important;
     --font-monospace: 'Fira Code', monospace !important;
@@ -150,6 +151,28 @@
 .dropdown-menu > li > a:hover {
     background: var(--select-text-bg-color);
     color: #fff;
+}
+
+.md-rawblock-control:not(.md-rawblock-tooltip) {
+    background: var(--theme-sb);
+    color: var(--text-color);
+}
+
+.md-rawblock-on-edit > .md-rawblock-tooltip,
+.md-rawblock:hover > .md-rawblock-container,
+.md-rawblock:hover > .md-rawblock-tooltip {
+    background: var(--theme-sb);
+    color: var(--text-color);
+}
+
+#write .md-rawblock-tooltip {
+    top: -1.5rem;
+    height: 1.5rem;
+    padding: 0.25rem;
+}
+
+#write .md-rawblock-input {
+    padding: 0;
 }
 
 body {
