@@ -36,6 +36,22 @@
     --monospace: 'Fira Code', monospace !important;
 }
 
+#top-titlebar #w-min:hover {
+    background-color: rgba(0, 0, 0, 0.01);
+    color: var(--theme-yl);
+}
+
+#top-titlebar #w-max:hover,
+#top-titlebar #w-restore:hover {
+    background-color: rgba(0, 0, 0, 0.01);
+    color: var(--theme-gn);
+}
+
+#top-titlebar #w-close:hover {
+    background-color: rgba(0, 0, 0, 0.01);
+    color: var(--theme-rd);
+}
+
 /* monokai code color */
 .cm-s-inner {
     font-weight: 300;
