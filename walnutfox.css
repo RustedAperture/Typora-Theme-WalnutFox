@@ -52,7 +52,7 @@
 }
 
 .cm-s-inner .CodeMirror-cursor {
-    border-left: 1px solid var(--theme-fg);
+    border-left: 1px solid var(--theme-fg) !important;
 }
 
 .cm-s-inner .CodeMirror-selected {
